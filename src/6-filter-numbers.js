@@ -1,3 +1,12 @@
 export const filterNumbers = (array, largerThan) => {
-  return array
+  let newArray = []
+  array.forEach(item => {
+    if (item <= largerThan) {
+      newArray.push(item)
+    }
+  })
+  return newArray
 }
+
+
+
